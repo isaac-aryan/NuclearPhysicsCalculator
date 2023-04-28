@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Nuclear Physics App</title>
+</head>
+<body>
+    <header>
+        <h1>Nuclear Physics Calculator</h1>
+    </header>
+
+    <div id="param-selector">
+        <button type="button" id="angular-momentum-btn" onclick="showAngular()">Angular Momentum</button>
+        <button type="button" id="bohrs-rad-btn" onclick="showRadius()">Bohr's Radius</button>
+        <button type="button" id="velocity-btn" onclick="showVelocity()">Velocity of Electron</button>
+
+    </div>
+
+    <div id="angular-momentum-wrapper" style="display: none;">
+        <div id="angular-momentum-formula-selector">
+            <p>To calculate angular momentum, 2 popular formulas exist. They make up one of the most important postulates of Bohr's Atomic Model.<br>Select the formula you wish to use and click submit.</p>
+            <br>
+            <br>
+            <input type="radio" id="angular-form-1" name="angular-form" value="angular-form-1"><label for="angular-form-1" id="angular-form-1-label">
+            <h3>1.] Angular Momentum = Me x Ve x r</h3>
+            <p>where Me = Mass of electron,<br>Ve = Velocity of the electron, & <br>r = Bohr's radius of that particular orbit</p>
+            </label>
+            <br>
+            <input type="radio" id="angular-form-2" name="angular-form" value="angular-form-2"><label for="angular-form-2" id="angular-form-2-label">
+            <h3>2.] Angular Momentum = (n x h ) / 2 π</h3>
+            <p>where n = Principal Quantum Number,<br>h = Planck's Constant</p>
+            </label>
+            <br>
+            <br>
+            <button class="form-submit-btn" id = "ang-submit-btn" type="button">CHOOSE FORMULA</button>
+        </div>
+
+        <div id="angular-momentum-field" style="display: none;">
+
+           
+        </div>
+    </div>
+
+    <div id="bohrs-rad-wrapper" style="display: none;">
+        <div id="bohrs-rad-formula">
+            <p>The formula this app uses to compute Bohr's radius is the following:</p>
+            
+            <h3>Bohr's Radius = (n^2 x h^2 x ε0) / (π Me Z e^2)</h3>
+            <p>where n = Principal Quantum Number,<br>h = Planck's Constant,<br> ε0 = Permitivity of Free Space,<br>Me = Mass of Electron,<br>Z = Atomic Number, <br>e = Charge on an electron</p>
+        </div>
+
+        <div id="bohrs-rad-field">
+            <p>Calculate Bohrs radius:</p>
+            <label for="quantum-number" id="bohr-quant-label">Principal Quantum Number = </label>
+            <input type="text" id="quantum-number" name="quantum-number"><br>
+            <label for="atomic-number" id="bohr-atomic-label">Atomic Number of Element = </label>
+            <input type="text" id="atomic-number" name="atomic-number"><br>
+            <br>
+            <button type="button" class="form-submit-btn" id="bohr-calc" onclick="calcRadForm()">CALCULATE</button>
+            <br>
+        </div>        
+    </div>
+
+    <div id="velocity-wrapper" style="display: none;">
+        <div id="velocity-formula-selector">
+            <p>To calculate the velocity of an electron in the nth permitted orbit, 2 popular formulas exist.<br>Select the formula you wish to use and click submit.</p>
+            <br>
+            <br>
+            <input type="radio" id="velocity-form-1" name="velocity-form" value="velocity-form-1"><label for="velocity-form-1" id="velocity-form-1-label">
+            <h3>1.] Velocity of Electron = Z e^2 / 2 ϵ0 n h</h3>
+            <p>where Z = Atomic Number,<br>e = Charge on an electron, <br>ϵ0 = Permitivity of free space,<br>n = Principal Quantum Number, & <br>h = Planck's Constant</p>
+            </label>
+            <br>
+            <input type="radio" id="velocity-form-2" name="velocity-form" value="velocity-form-2"><label for="velocity-form-2" id="velocity-form-2-label">
+            <h3>2.] Velocity of Electron = (n x h ) / 2 π Me r</h3>
+            <p>where n = Principal Quantum Number,<br>h = Planck's Constant, <br>Me = Mass of an electron, & <br>r = Bohr's Radius</p>
+            </label>
+            <br>
+            <br>
+            <button class="form-submit-btn" id = "velocity-submit-btn" type="button">CHOOSE FORMULA</button>
+        </div>
+
+        <div id="velocity-field" style="display: none;">
+
+           
+        </div>       
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

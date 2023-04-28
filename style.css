@@ -1,0 +1,85 @@
+body{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    font-family: monospace;
+    text-align: center;
+    align-items: center;
+
+    border: none;
+}    
+
+header{
+    padding: 15px;
+    font-family: monospace;
+}
+#param-selector{
+    padding: 8px;
+}
+
+#angular-momentum-formula-selector, #angular-momentum-field, #bohrs-rad-formula, #velocity-formula-selector, #velocity-field{
+    font-size: large;
+    background-color: #3d2648;
+    padding: 7px;
+    margin: 7px;
+    color: aliceblue;
+    border-radius: 6px;
+    border: solid;
+    border-width: thick;
+    border-color: whitesmoke;
+
+}
+#angular-momentum-btn, #bohrs-rad-btn, #velocity-btn{
+    font-family: monospace;
+
+    size: 30px;
+    border: thin;
+    border-color: thistle;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 6px;
+    margin-right: 6px;
+
+    background-color: #563a64; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.form-submit-btn{
+
+    font-family: Arial;
+    size: 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 7px;
+
+    background-color: white;
+    color: rgb(45, 23, 91);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    text-align: center;
+    align-items: center;
+}
+
+#bohrs-rad-field{
+    padding-top: 10px;
+    font-size: large;
+    background-color: #3d2648;
+    padding: 7px;
+    margin: 7px;
+    color: aliceblue;
+    border-radius: 6px;
+    border: solid;
+    border-width: thick;
+    border-color: whitesmoke;
+}
