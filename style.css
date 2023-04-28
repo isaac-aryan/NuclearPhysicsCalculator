@@ -8,6 +8,13 @@ body{
     border: none;
 }    
 
+footer{
+    font-family: monospace;
+    text-align: center;
+    align-items: center;
+    padding: 7px;
+    margin: 7px;
+}
 header{
     padding: 15px;
     font-family: monospace;
@@ -82,4 +89,15 @@ header{
     border: solid;
     border-width: thick;
     border-color: whitesmoke;
+}
+
+#code-link{
+    background-color: rgb(25, 66, 67);
+    border: gray;
+    color: whitesmoke;
+    padding: 7px;
+    border: thin;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 7px;
 }
